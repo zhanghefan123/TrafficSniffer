@@ -11,7 +11,7 @@
 - pojo : used for store simple object
 - starter : used for start sniffer
 
-## 1.2 packet required
+## 1.2 package required
 - numpy           1.24.1
 - pandas          1.5.2
 - scapy           2.5.0
