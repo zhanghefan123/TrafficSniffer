@@ -7,7 +7,11 @@ class Sniffer:
         self.packet_count = packet_count
         self.callback = callback
 
-    def start_sniff(self):
+    def sniff_function(self):
         sniff(iface=self.interface_name,
               prn=self.callback,
               count=self.packet_count)
+
+    def start_sniff(self):
+        threading.Thread(target=self.sniff_function).start()
+
